@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'QuicksandBook';
+  src: url('../fonts/Quicksand_Book-webfont.eot');
+  src: url('../fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/Quicksand_Book-webfont.woff') format('woff'),
+       url('../fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+       url('../fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');}
+body {
+  background: #FFFFFF;
+  color: #334488;
+  font-family: QuicksandBook, Helvetica, Arial, sans-serif;}
 a {
   color: blue;
   text-decoration: none;}
@@ -5,10 +16,6 @@ a:hover {
   /*font-weight: bold;*/
   text-decoration: underline;
   color: darkblue;}
-body {
-  background: #FFFFFF;
-  color: #334488;
-  font-family: Arial, Verdana, sans-serif;}
 div.disciplina { 
   position: relative;
   margin: 10px;
