@@ -2,8 +2,8 @@
   font-family: 'QuicksandBook';
   src: url('../fonts/Quicksand_Book-webfont.eot');
   src: url('../fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'), 
-       url('../fonts/Quicksand_Book-webfont.woff') format('woff'),
-       url('../fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+       url('../fonts/Quicksand_Book-webfont-accented.woff') format('woff'),
+       url('../fonts/Quicksand_Book-webfont-accented.ttf') format('truetype'),
        url('../fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');}
 body {
   background: #FFFFFF;
@@ -40,5 +40,4 @@ h2 {
   text-shadow: 1px 1px 0px;}
 h3, h4 {
   text-shadow: 1px 0px 0px;}*/
-h1, h2, h3, h4 {
-  text-weight: lighter; }
+
