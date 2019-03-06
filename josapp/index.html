@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head><title>Agnodice</title></head>
+<style>
+table {
+  border-collapse: collapse;
+}
+table, td, th {
+  border: 1px solid black;
+}
+</style>
 <body>
-<h1>JosApp</h1>
+<h1>Agnodice</h1>
 
 <p>Busca: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
 
@@ -10,29 +18,28 @@
 
 
 <script>
-function select(str) {
-  return str.startsWith(document.getElementById("txt1").value.toLowerCase());
-}
+terms = new Array(4);
+terms[0] = getTerms("codes.txt");
+terms[1] = getTerms("terms.la");
+terms[2] = getTerms("terms.en");
+terms[3] = getTerms("terms.es");
 function showHint(str) {
-  var xhttp;
-  if (str.length == 0) { 
-    document.getElementById("txtHint").innerHTML = "";
-    return;
+  var tmp;
+  var list = "<table>";
+  list += "<tr><th>Code</th><th>Latim</th><th>English</th><th>Spa&ntilde;ol</th></tr>";
+  for (var i=0; i<terms[0].length; i++) {
+    tmp = "<tr><td>"+terms[0][i]+"</td><td>"+terms[1][i]+"</td><td>"+terms[2][i]+"</td><td>"+terms[2][i]+"</td></tr>";
+    if (tmp.includes(str)) list += tmp;
   }
+  list += "</table>";
+  document.getElementById("txtHint").innerHTML = list;
+  
+}
+function getTerms(file){
   xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var myArr = JSON.parse(this.responseText);
-      myArr = myArr.filter(select);
-      var list = "<br>";
-      for (var i=0; i<myArr.length; i++) {
-        list += myArr[i]+"<br>";
-      }
-      document.getElementById("txtHint").innerHTML = list;
-    }
-  };
-  xhttp.open("GET", "terms.pt", true);
-  xhttp.send();   
+  xhttp.open("GET", file, false);
+  xhttp.send();
+  return xhttp.responseText.split('\n');
 }
 </script>
 

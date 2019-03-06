@@ -1,0 +1,10 @@
+vertical
+horizontal
+mediano
+coronal
+sagital
+derecho
+izquierdo
+intermedio
+medial
+lateral
