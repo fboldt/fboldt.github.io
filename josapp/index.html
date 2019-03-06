@@ -29,7 +29,7 @@ function showHint(str) {
   list += "<tr><th>Code</th><th>Latim</th><th>English</th><th>Spa&ntilde;ol</th></tr>";
   for (var i=0; i<terms[0].length; i++) {
     tmp = "<tr><td>"+terms[0][i]+"</td><td>"+terms[1][i]+"</td><td>"+terms[2][i]+"</td><td>"+terms[2][i]+"</td></tr>";
-    if (tmp.includes(str)) list += tmp;
+    if (tmp.includes(str.toLowerCase())) list += tmp;
   }
   list += "</table>";
   document.getElementById("txtHint").innerHTML = list;
