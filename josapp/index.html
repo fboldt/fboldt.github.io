@@ -11,7 +11,7 @@
 
 <script>
 function select(str) {
-  return str.startsWith(document.getElementById("txt1").value);
+  return str.startsWith(document.getElementById("txt1").value.toLowerCase());
 }
 function showHint(str) {
   var xhttp;
