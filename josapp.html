@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title>Agnodice</title></head>
+<body>
+<h1>JosApp</h1>
+
+<p>Busca: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
+
+<p><span id="txtHint"></span></p> 
+
+
+<script>
+function select(str) {
+  return str.startsWith(document.getElementById("txt1").value);
+}
+function showHint(str) {
+  var xhttp;
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var myArr = JSON.parse(this.responseText);
+      myArr = myArr.filter(select);
+      var list = "<br>";
+      for (var i=0; i<myArr.length; i++) {
+        list += myArr[i]+"<br>";
+      }
+      document.getElementById("txtHint").innerHTML = list;
+    }
+  };
+  xhttp.open("GET", "terms.pt", true);
+  xhttp.send();   
+}
+</script>
+
+</body>
+</html>
