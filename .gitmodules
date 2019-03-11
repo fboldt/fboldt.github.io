@@ -1,0 +1,3 @@
+[submodule "JosApp"]
+	path = JosApp
+	url = https://github.com/fboldt/JosApp.git
