@@ -5,22 +5,27 @@
        url('../fonts/Quicksand_Book-webfont-accented.woff') format('woff'),
        url('../fonts/Quicksand_Book-webfont-accented.ttf') format('truetype'),
        url('../fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');}
+
 body {
   background: #FFFFFF;
   color: #334488;
   font-family: QuicksandBook, sans-serif;}
+
 a {
   color: blue;
   text-decoration: none;}
+
 a:hover {
   /*font-weight: bold;*/
   text-decoration: underline;
   color: darkblue;}
+
 div.disciplina { 
   position: relative;
-  margin: 10px;
-  padding: 10px;
+  margin: 2px;
+  padding: 6px;
   border: 1px solid #0088dd;}
+
 .enfeite {
   text-shadow: 3px 3px 0px blue;
   text-align: right;
@@ -34,6 +39,7 @@ div.disciplina {
   font-style: italic;
   opacity: 0.1;
   z-index: -1;}
+
 h2 { 
   border-top: 1px solid;}
 /*h1, h2 {
