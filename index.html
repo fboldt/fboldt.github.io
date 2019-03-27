@@ -5,84 +5,39 @@
     <title>Professor Francisco Boldt</title>
 		<style type="text/css">
 		</style>
+    <script>
+      function putContent(elementId, contentFile){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById(elementId).innerHTML =
+            this.responseText;
+          }
+        };
+        xhttp.open("GET", contentFile, true);
+        xhttp.send();
+      }
+      document.getElementById(elementId).className = "active";
+    </script>
   </head>
-  <body>
+  <body onload="putContent('content','disciplinas.html')">
 	<div class="container_12">
 	  <div class="grid_4"><a href="http://www.sr.ifes.edu.br"><img src="images/ifes_serra.png"></a></div>
-      <h1 class="grid_6">Professor Francisco Boldt</h1>
+    <h1 class="grid_6">Professor Francisco Boldt</h1>
 	  <div class="grid_2" style="text-align: right">
-        <a href="http://lattes.cnpq.br/0385991152092556"><img src="images/lattes.png"></a> 
-		<br>
-		<a href="https://github.com/fboldt"><img src="images/github-logo.png"></a>
-	    <br>
-	    <a href="https://scholar.google.com.br/citations?user=cVUbNyMAAAAJ"><img src="images/scholar_logo_24dp.png"></a>
-      </div>
-
-	  <h2 class="grid_12">Academia</h2>
-	  <div class="grid_1" style="position: relative; visibility:hidden;">
-	  <h3>&nbsp;</h3>
-	  <ul style="list-style-type: none; position: absolute; left: -2em; top: 0em;">
-		<li>Pesquisa</li>
-		<li>Programação</li>
-		<li>Idiomas</li>
-	  </ul>
-	  </div>
-	  <div class="grid_11">
-		<h3>Formação</h3>
-		<ul>
-		  <li>Doutorado em Ciência da Computação (Ufes), concluído em 2017.</li>
-		  <li>Mestrado em Informática (Ufes), concluído em 2008.</li>
-		  <li>Especialização em Desenvolvimento de Sistemas em Java (Ufes), concluído em 2006</li>
-		  <li>Curso Superior em Tecnologia em Processamento de Dados (Unesc), concluído em 1998.</li> 
-		</ul>
-	  </div>
-
-    <h2 class="grid_12">Apresentações</h2>
-	  <div class="grid_1" style="position: relative; visibility:hidden;">&nbsp;</div>
-	  <div class="grid_3" style="position: relative; ">
-	  26 de março de 2019
+      <a href="http://lattes.cnpq.br/0385991152092556"><img src="images/lattes.png"></a> <br>
+		  <a href="https://github.com/fboldt"><img src="images/github-logo.png"></a> <br>
+      <a href="https://scholar.google.com.br/citations?user=cVUbNyMAAAAJ"><img src="images/scholar_logo_24dp.png"></a>
     </div>
-	  <div class="grid_8">
-    <a href="https://docs.google.com/presentation/d/1oJCFsNUuO7RX22CbJSDcb6PhK53xdYW0Z_VQQnJgic0/edit?usp=sharing">
-      Mestrado Profissional em Computação Aplicada</a>
-    </div>
-	  <h2 class="grid_12">Disciplinas</h2>
-      <!-- h3 class="grid_2">&nbsp;</h3-->
-      <div class="grid_6">
-        <h3>Engenharia de Controle e Automa&ccedil;&atilde;o</h3>
+    
+    <h4 class="grid_12" style="text-align: center">
+      <a href="javascript:putContent('content', 'disciplinas.html');">Disciplinas</a> - 
+      <a href="javascript:putContent('content', 'apresentacoes.html');">Apresenta&ccedil;&otilde;es</a> - 
+      <a href="javascript:putContent('content', 'escolaridade.html');">Escolaridade</a>
+    </h4>
 
-			  <div class="disciplina">
-  	      <h4>Algoritmos e Estruturas de Dados</h4>
-	        <p><a href="planosdeensino/PLANO-DE-ENSINO_eca-alg-estr-dados.pdf">Plano de Ensino</a></p>
-		  	  <p><a href="materialdeaula/ProgramacaoC_primeira_parte.pdf">Apostila (Primeira Parte)</a></p>
-					<span class="enfeite">Programa&ccedil;&atilde;o<br>em C</span>
-				</div>
+	  <div id="content"> </div>
 
-			  <div class="disciplina">
-	        <h4>Linguagem de Programa&ccedil;&atilde;o</h4>
-	        <p><a href="planosdeensino/PLANO-DE-ENSINO_eca-ling-prog.pdf">Plano de Ensino</a></p>
-			    <p><a href="materialdeaula/%5BApostila%5D%20Programação%20em%20C%20(v2.0.0).pdf">Apostila</a> - <a href="materialdeaula/%5BCaderno%20de%20Exercícios%20e%20Questões%5D%20Programação%20em%20C%20(v1.1.0).pdf">Caderno de Exerc&iacute;cios</a></p>
-					<span class="enfeite">Linguagem<br>C</span>
-        </div>
-
-			</div>
-   	  <div class="grid_6">
-			  <h3>T&eacute;cnico em Inform&aacute;tica para Internet</h3>
-
-			  <div class="disciplina">
-      	  <h4>Programa&ccedil;&atilde;o Web 1</h4>
-      	  <p><a href="planosdeensino/PLANO-DE-ENSINO_tec-prog-web-1.pdf">Plano de Ensino</a></p>
-          <p><a href="https://drive.google.com/open?id=1UQdR12y54HUcW7iQ3UbY6XpXGG4pgG4I">Apresenta&ccedil;&otilde;es</a></p>
-					<span class="enfeite">HTML&amp;CSS<br>JavaScript</span>
-				</div>
-
-			  <div class="disciplina">
-	        <h4>Programa&ccedil;&atilde;o Web 2</h4>
-	        <p><a href="planosdeensino/PLANO-DE-ENSINO_tec-prog-web-2.pdf">Plano de Ensino</a></p>
-          <p><a href="https://drive.google.com/open?id=1LdNtPCaAMmo3JYTHAGE463IhP8Km-K7n">Apresenta&ccedil;&otilde;es</a></p>
-					<span class="enfeite">PHP&amp;MySQL<br>AJAX</span>
-				</div>
-      </div>
 	  <div class="grid_12" style="position: relative"> 
 	  <h2>Contato: </h2>
 	  <span style="position: absolute; top: 28px; left: 108px;"><img src="images/email.png"></span>
