@@ -6,6 +6,10 @@
        url('../fonts/Quicksand_Book-webfont-accented.ttf') format('truetype'),
        url('../fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');}
 
+div {
+  margin: 0px;
+}
+
 body {
   background: #FFFFFF;
   color: #334488;
