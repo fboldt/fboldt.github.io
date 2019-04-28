@@ -5,15 +5,15 @@
     <script src="scripts/scripts.js"></script>
     <script>
       function loadpage(){
-        putContent('head','heading.html');
-        putContent('content','disciplinas.html');
+        addContent('head','heading.html');
+        putContents('content',['escolaridade.html','disciplinas.html','apresentacoes.html']);
         putContent('foot','foot.html');
       }
     </script>
     <title>Professor Francisco Boldt</title>
   </head>
   <body onload="loadpage()">
-    <div class="container_12">
+    <div id="main" class="container_12">
       <header id="head"></header>
       <div id="content"></div>
       <footer id="foot"></footer>
