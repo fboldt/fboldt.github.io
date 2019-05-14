@@ -1,18 +1,10 @@
-@font-face {
-  font-family: 'QuicksandBook';
-  src: url('../fonts/Quicksand_Book-webfont.eot');
-  src: url('../fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'), 
-       url('../fonts/Quicksand_Book-webfont-accented.woff') format('woff'),
-       url('../fonts/Quicksand_Book-webfont-accented.ttf') format('truetype'),
-       url('../fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');}
-
 div {
   margin: 0px;
 }
 
 body {
   background: #FFFFFF;
-  color: #334488;
+  color: #405090;
   font-family: verdana, sans-serif;}
 
 a {
@@ -28,13 +20,13 @@ div.disciplina {
   position: relative;
   margin: 2px;
   padding: 6px;
-  border: 1px solid #0088dd;}
+  border: 1px solid #0090E0;}
 
 .enfeite {
   text-shadow: 3px 3px 0px blue;
   text-align: right;
   font-size: 200%;
-  color: #8899FF;
+  color: #90A0FF;
   float: right;
   position: absolute;
   right: 10px;
