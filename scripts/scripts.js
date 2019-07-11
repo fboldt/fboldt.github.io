@@ -16,7 +16,7 @@ function putContents(elementId, contentFiles){
   }
   document.getElementById(elementId).innerHTML = divs;
   for (i=0; i<contentFiles.length; i++) {
-    addContent(""+elementId+i, contentFiles[i]);
+    putContent(""+elementId+i, contentFiles[i]);
   }
 }
 function putContent(elementId, contentFile){
