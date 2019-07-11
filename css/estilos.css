@@ -1,38 +1,55 @@
-div {
-  margin: 0px;
-}
-
 body {
-  background: #FFFFFF;
-  color: #405090;
   font-family: verdana, sans-serif;}
 
-a {
-  color: blue;
+div {
+  margin: 0px; }
+
+h1, h2, h3, h4, p {
+  margin: 10; }
+
+.blue {
+  color: #405070;}
+
+.blue a {
+  color: darkblue;
   text-decoration: none;}
 
-a:hover {
-  /*font-weight: bold;*/
+.blue a:hover {
   text-decoration: underline;
-  color: darkblue;}
+  color: blue;}
 
-div.disciplina { 
-  position: relative;
-  margin: 2px;
-  padding: 6px;
-  border: 1px solid #0090E0;}
+.red {
+  color: #704050;}
 
-.enfeite {
-  text-shadow: 3px 3px 0px blue;
-  text-align: right;
-  font-size: 200%;
-  color: #90A0FF;
-  float: right;
-  position: absolute;
-  right: 10px;
-  top: 0px;
-  font-weight: bold;
-  font-style: italic;
-  opacity: 0.1;
-  z-index: -1;}
+.red a {
+  color: darkred;
+  text-decoration: none;}
+
+.red a:hover {
+  text-decoration: underline;
+  color: red;}
+
+
+.green {
+  color: #507040;}
+
+.green a {
+  color: darkgreen;
+  text-decoration: none;}
+
+.green a:hover {
+  text-decoration: underline;
+  color: green;}
+
+.gray {
+  color: #606060;}
+
+.gray a {
+  color: darkgray;
+  text-decoration: none;}
+
+.gray a:hover {
+  text-decoration: underline;
+  color: gray;}
+
 
