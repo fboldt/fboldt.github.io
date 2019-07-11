@@ -6,8 +6,13 @@ div {
   margin: 0px; 
   padding: 0px; }
 
-h1, h2, h3, h4, p {
-  margin: 10; }
+h1, h2, h3, h4 {
+  margin: 10; 
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;}
+  
+p {
+  margin: 10px; }
 
 a {
   text-decoration: none;}
