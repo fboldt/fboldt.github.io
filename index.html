@@ -5,17 +5,18 @@
     <script src="scripts/scripts.js"></script>
     <script>
       function loadpage(){
-        putContent('head','heading.html');
-        putContents('content', ['pesquisa.html', 'formacao.html', 'disciplinas.html', 'apresentacoes.html']);
-        putContent('foot','foot.html');
+        putContent('heading.html');
+        putContent('pesquisa.html', 'grid_8 blue');
+        putContent('formacao.html', 'grid_4 gray');
+        putContent('disciplinas.html', 'grid_9 red');
+        putContent('apresentacoes.html', 'grid_3 green');
+        putContent('foot.html', 'grid_12 gray border-top');
       }
     </script>
     <title>Professor Francisco Boldt</title>
   </head>
   <body onload="loadpage()">
-      <div id="head" class="container_12"></div>
-      <div id="content" class="container_12"></div>
-      <div id="foot" class="container_12"></div>
+    <div id="main" class="container_12"></div>
   </body>
 </html>
 

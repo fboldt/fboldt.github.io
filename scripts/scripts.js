@@ -1,14 +1,4 @@
-function addContent(elementId, contentFile){
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById(elementId).innerHTML += this.responseText;
-      document.getElementById(elementId).innerHTML += '<div class="grid_12" style="border-bottom: 1px solid"><div>';
-    }
-  };
-  xhttp.open("GET", contentFile, true);
-  xhttp.send();
-}
+/*
 function putContents(elementId, contentFiles){
   divs = "";
   for (i=0; i<contentFiles.length; i++) {
@@ -18,15 +8,15 @@ function putContents(elementId, contentFiles){
   for (i=0; i<contentFiles.length; i++) {
     putContent(""+elementId+i, contentFiles[i]);
   }
-}
-function putContent(elementId, contentFile){
+}*/
+function putContent(contentFile, classes=""){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById(elementId).innerHTML +=
-      this.responseText;
+      text = "<div class='"+classes+"'>"+this.responseText+"</div>";
+      document.getElementById("main").innerHTML += text;
     }
   };
-  xhttp.open("GET", contentFile, true);
+  xhttp.open("GET", contentFile, false);
   xhttp.send();
 }
