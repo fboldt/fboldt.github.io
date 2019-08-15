@@ -25,7 +25,7 @@ div.border-bottom {
   border-bottom: 1px solid;}
   
 .blue {
-  color: #405070;
+  color: #203040;
   background-color: #fdfdff;}
 
 .blue a {
@@ -34,32 +34,32 @@ div.border-bottom {
 
 .blue a:hover {
   text-decoration: underline;
-  color: blue;}
+  color: darkblue;}
 
 .red {
-  color: #704050;
+  color: #402030;
   background-color: #fffdfd;}
 
 .red a {
-  color: darkred;
+  color: #402030;
   text-decoration: none;}
 
 .red a:hover {
   text-decoration: underline;
-  color: red;}
+  color: darkred;}
 
 
 .green {
-  color: #507040;
+  color: #304020;
   background-color: #fdfffd;}
 
 .green a {
-  color: darkgreen;
+  color: #304020;
   text-decoration: none;}
 
 .green a:hover {
   text-decoration: underline;
-  color: green;}
+  color: darkgreen;}
 
 .gray {
   color: #707070;
@@ -71,6 +71,6 @@ div.border-bottom {
 
 .gray a:hover {
   text-decoration: underline;
-  color: gray;}
+  color: darkgray;}
 
 
