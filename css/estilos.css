@@ -6,6 +6,13 @@ h1, h2, h3, h4 {
   margin: 10; 
   letter-spacing: 0.05em;
   word-spacing: 0.1em;}
+
+h1 {
+  margin: 20;}
+
+h2 {
+  margin: 40 0 20 0; 
+  border-bottom-style: solid;}
   
 p {
   margin: 10px; }
@@ -17,12 +24,6 @@ div.border {
   border: 1px solid;
   margin-left: 5px;
   margin-right: 5px;}
-
-div.border-top {
-  border-top: 1px solid;}
-
-div.border-bottom {
-  border-bottom: 1px solid;}
   
 .blue {
   color: #203040;
