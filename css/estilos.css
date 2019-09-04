@@ -1,12 +1,12 @@
-html, body {
+body {
   font-family: verdana, sans-serif;
-  margin:0;
-  padding:0;
+  margin: 1em;
   box-sizing:border-box;}
 
 .container {
   display:grid;
-  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 2em;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: "h h"
                        "m a"
                        "f f";}
@@ -42,59 +42,44 @@ p {
 a {
   text-decoration: none;}
 
-div.border {
+div.disciplinas {
   border: 1px solid;
   margin-left: 5px;
   margin-right: 5px;
+  min-width:13em;
+  max-width:15em;
   float:left;}
   
 .blue {
-  color: #203040;
-  background-color: #fdfdff;}
-
+  color: #203040;}
 .blue a {
-  color: darkblue;
-  text-decoration: none;}
-
+  color: #203040; }
 .blue a:hover {
-  text-decoration: underline;
-  color: darkblue;}
+  color: darkblue;
+  text-decoration: underline;}
 
 .red {
-  color: #402030;
-  background-color: #fffdfd;}
-
+  color: #402030;}
 .red a {
-  color: #402030;
-  text-decoration: none;}
-
+  color: #402030;}
 .red a:hover {
-  text-decoration: underline;
-  color: darkred;}
-
+  color: darkred;
+  text-decoration: underline;}
 
 .green {
-  color: #304020;
-  background-color: #fdfffd;}
-
+  color: #304020;}
 .green a {
-  color: #304020;
-  text-decoration: none;}
-
+  color: #304020;}
 .green a:hover {
-  text-decoration: underline;
-  color: darkgreen;}
+  color: darkgreen;
+  text-decoration: underline;}
 
 .gray {
-  color: #707070;
-  background-color: #fdfdfd;}
-
+  color: #707070;}
 .gray a {
-  color: darkgray;
-  text-decoration: none;}
-
+  color: #707070;}
 .gray a:hover {
-  text-decoration: underline;
-  color: darkgray;}
+  color: darkgray;
+  text-decoration: underline;}
 
 
