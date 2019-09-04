@@ -5,7 +5,7 @@ body {
 
 .container {
   display:grid;
-  grid-column-gap: 2em;
+  grid-column-gap: 1em;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "h h"
                        "m a"
@@ -44,10 +44,8 @@ a {
 
 div.disciplinas {
   border: 1px solid;
-  margin-left: 5px;
-  margin-right: 5px;
-  min-width:13em;
-  max-width:15em;
+  margin: 5px;
+  width:13em;
   float:left;}
   
 .blue {
