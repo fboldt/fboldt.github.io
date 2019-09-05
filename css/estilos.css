@@ -23,7 +23,6 @@ aside {
 footer {
   grid-area: f;}
 
-
 h1, h2, h3, h4 {
   margin: 10; 
   letter-spacing: 0.05em;
@@ -47,34 +46,24 @@ div.disciplinas {
   
 .blue {
   color: #203040;}
-.blue a {
-  color: darkblue; }
 .blue a:hover {
   color: darkblue;
   text-decoration: underline;}
 
 .red {
   color: #402030;}
-.red a {
-  color: darkred;}
 .red a:hover {
   color: darkred;
   text-decoration: underline;}
 
 .green {
   color: #304020;}
-.green a {
-  color: darkgreen;}
 .green a:hover {
   color: darkgreen;
   text-decoration: underline;}
 
 .gray {
   color: #707070;}
-.gray a {
-  color: darkgray;}
 .gray a:hover {
   color: darkgray;
   text-decoration: underline;}
-
-
