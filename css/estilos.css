@@ -48,7 +48,7 @@ div.disciplinas {
 .blue {
   color: #203040;}
 .blue a {
-  color: #203040; }
+  color: darkblue; }
 .blue a:hover {
   color: darkblue;
   text-decoration: underline;}
@@ -56,7 +56,7 @@ div.disciplinas {
 .red {
   color: #402030;}
 .red a {
-  color: #402030;}
+  color: darkred;}
 .red a:hover {
   color: darkred;
   text-decoration: underline;}
@@ -64,7 +64,7 @@ div.disciplinas {
 .green {
   color: #304020;}
 .green a {
-  color: #304020;}
+  color: darkgreen;}
 .green a:hover {
   color: darkgreen;
   text-decoration: underline;}
@@ -72,7 +72,7 @@ div.disciplinas {
 .gray {
   color: #707070;}
 .gray a {
-  color: #707070;}
+  color: darkgray;}
 .gray a:hover {
   color: darkgray;
   text-decoration: underline;}
