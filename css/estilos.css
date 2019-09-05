@@ -44,25 +44,25 @@ div.disciplinas {
   width:13em;
   float:left;}
   
-.blue {
+.blue a.blue {
   color: #203040;}
 .blue a:hover {
   color: darkblue;
   text-decoration: underline;}
 
-.red {
+.red a.red {
   color: #402030;}
 .red a:hover {
   color: darkred;
   text-decoration: underline;}
 
-.green {
+.green a.green {
   color: #304020;}
 .green a:hover {
   color: darkgreen;
   text-decoration: underline;}
 
-.gray {
+.gray a.gray {
   color: #707070;}
 .gray a:hover {
   color: darkgray;
