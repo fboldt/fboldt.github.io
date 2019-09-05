@@ -43,7 +43,9 @@ div.disciplinas {
   margin: 5px;
   width:13em;
   float:left;}
-  
+
+a {text-decoration: none;}
+
 .blue a.blue {
   color: #203040;}
 .blue a:hover {
