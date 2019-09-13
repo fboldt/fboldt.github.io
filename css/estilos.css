@@ -10,6 +10,12 @@ body {
   grid-template-areas: "h h"
                        "m a"
                        "f f";}
+.wrapper {
+    min-width: 300px;
+    width: 48%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
 
 header {
   grid-area: h;}
