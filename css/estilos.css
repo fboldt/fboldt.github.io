@@ -10,13 +10,6 @@ body {
   grid-template-areas: "h h"
                        "m a"
                        "f f";}
-.wrapper {
-    min-width: 300px;
-    width: 48%;
-    margin: 0 auto;
-    margin-bottom: 2em;
-}
-
 header {
   grid-area: h;}
 
@@ -28,6 +21,21 @@ aside {
 
 footer {
   grid-area: f;}
+
+.wrapper {
+    min-width: 300px;
+    width: 45%;
+    margin: 1.5%;
+    margin-bottom: 2em;
+}
+
+div.disciplinas {
+  border: 1px solid;
+  margin: 0.5%;
+  min-width: 13em;
+  width: 32%;
+  float:left;}
+
 
 h1, h2, h3, h4 {
   margin: 10; 
@@ -44,12 +52,6 @@ h2 {
 p {
   margin: 10px; }
 
-
-div.disciplinas {
-  border: 1px solid;
-  margin: 5px;
-  width:13em;
-  float:left;}
   
 a {
   text-decoration: none;}
