@@ -6,7 +6,7 @@ function putContent(contentFile, classes="", element="main"){
       document.getElementById(element).innerHTML += text;
     }
   };
-  xhttp.open("GET", contentFile, false);
+  xhttp.open("GET", contentFile, true);
   xhttp.send();
 }
 
