@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="aux/estilos.css" />
+    <script src="aux/scripts.js"></script>
+    <script>
+      function loadpage(){
+        putContent('aux/heading.html', '', 'head');
+        putContent('aux/pesquisa.html', 'blue', 'main');
+        putContent('aux/formacao.html', 'gray', 'aside');
+        putContent('aux/disciplinas.html', 'red', 'main');
+        putContent('aux/apresentacoes.html', 'green', 'aside');
+        putContent('aux/horario.html', 'gray', 'main');
+        putContent('aux/foot.html', '', 'foot');
+      }
+    </script>
+    <title>Professor Francisco Boldt</title>
+  </head>
+  <body onload="loadpage()">
+    <div class="container">
+      <header id='head'></header>
+      <main id='main'></main>
+      <aside id='aside'></aside>
+      <footer id='foot'></footer>
+    </div>
+  </body>
+</html>
+
