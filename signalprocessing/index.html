@@ -1,17 +1,33 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <title>Signal Processing</title>
 </head>
 
 <body>
-    <h1>Signal Processing</h1>
-    <h2>Data Bases</h2>
-    <ul>
-        <li><a href="CARLETON_ENGLISH.html">CARLETON UNIVERSITY</a></li>
-        <li><a href="CWRU_ENGLISH.html">CWRU DATABASE</a></li>
-        <li><a href="EAAI_ENGLISH.html">Gestures_InertialSensors_EAAI</a></li>
-    </ul>
+    <div class="container m-4">
+        <h1>Signal Processing</h1>
+        <div class="m-3">
+            <h2 id="databases">Data Bases</h2>
+        </div>
+    </div>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        $.get("CARLETON_ENGLISH.html", function (data, status) { $("#databases").after(data); });
+        $.get("CWRU_ENGLISH.html", function (data, status) { $("#databases").after(data); });
+        $.get("EAAI_ENGLISH.html", function (data, status) { $("#databases").after(data); });
+    </script>
 </body>
 
 </html>
