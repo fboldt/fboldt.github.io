@@ -33,22 +33,38 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script>
-        $.get("modelos/", function (data, status) {
-            let start = data.search("<ul");
-            let end = data.search("</ul>");
-            $("#modelos").after(data.slice(start,end)); });
-        $.get("tutoriais/", function (data, status) { 
-            let start = data.search("<ul");
-            let end = data.search("</ul>");
-            $("#tutoriais").after(data.slice(start,end)); });
-        $.get("orientacoes/", function (data, status) { 
-            let start = data.search("<ul");
-            let end = data.search("</ul>");
-            $("#orientacoes").after(data.slice(start,end)); });
-        $.get("resolucoes/", function (data, status) { 
-            let start = data.search("<ul");
-            let end = data.search("</ul>");
-            $("#resolucoes").after(data.slice(start,end)); });
+        $("#modelos").after(`
+        <ul id="files" class="view-tiles"><li><a href="/csppdserra" class="icon icon-directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+<li><a href="/csppdserra/modelos/Modelo%20Parecer%20de%20Progress%C3%A3o%20CSPPD%2001-06.docx" class="icon icon icon-docx" title="Modelo Parecer de Progressão CSPPD 01-06.docx"><span class="name">Modelo Parecer de Progressão CSPPD 01-06.docx</span><span class="size">70471</span><span class="date">6/8/2020 4:32:53 PM</span></a></li>
+<li><a href="/csppdserra/modelos/Parecer%20Modelo%20AFASTAMENTO_30.03.2020.docx" class="icon icon icon-docx" title="Parecer Modelo AFASTAMENTO_30.03.2020.docx"><span class="name">Parecer Modelo AFASTAMENTO_30.03.2020.docx</span><span class="size">77163</span><span class="date">6/8/2020 4:32:53 PM</span></a></li>
+<li><a href="/csppdserra/modelos/Parecer%20Modelo%20MUDAN%C3%87A%20DE%20REGIME_30.03.2020.docx" class="icon icon icon-docx" title="Parecer Modelo MUDANÇA DE REGIME_30.03.2020.docx"><span class="name">Parecer Modelo MUDANÇA DE REGIME_30.03.2020.docx</span><span class="size">72557</span><span class="date">6/8/2020 4:32:53 PM</span></a></li>
+<li><a href="/csppdserra/modelos/Parecer%20Modelo%20RSC_30.03.2020.docx" class="icon icon icon-docx" title="Parecer Modelo RSC_30.03.2020.docx"><span class="name">Parecer Modelo RSC_30.03.2020.docx</span><span class="size">75722</span><span class="date">6/8/2020 4:32:53 PM</span></a></li></ul>
+        `);
+        $("#tutoriais").after(`
+        <ul id="files" class="view-tiles"><li><a href="/csppdserra" class="icon icon-directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+<li><a href="/csppdserra/tutoriais/Tutorial_para_a_Abertura_de_Processo_Eletronico_no_SIPAC.pdf" class="icon icon icon-pdf icon-application-pdf" title="Tutorial_para_a_Abertura_de_Processo_Eletronico_no_SIPAC.pdf"><span class="name">Tutorial_para_a_Abertura_de_Processo_Eletronico_no_SIPAC.pdf</span><span class="size">1884426</span><span class="date">6/9/2020 2:51:12 PM</span></a></li></ul>
+        `);
+        $("#orientacoes").after(`
+        <ul id="files" class="view-tiles"><li><a href="/csppdserra" class="icon icon-directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+<li><a href="/csppdserra/orientacoes/Acelera%C3%A7%C3%A3o%20de%20Promo%C3%A7%C3%A3o_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Acelera%C3%A7%C3%A3o%20de%20Promo%C3%A7%C3%A3o.pdf" class="icon icon icon-pdf icon-application-pdf" title="Aceleração de Promoção_Orientações Processuais_ 2020_Aceleração de Promoção.pdf"><span class="name">Aceleração de Promoção_Orientações Processuais_ 2020_Aceleração de Promoção.pdf</span><span class="size">528269</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
+<li><a href="/csppdserra/orientacoes/Afastamento%20Parcial_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Afastamento%20Parcial.pdf" class="icon icon icon-pdf icon-application-pdf" title="Afastamento Parcial_Orientações Processuais_ 2020_Afastamento Parcial.pdf"><span class="name">Afastamento Parcial_Orientações Processuais_ 2020_Afastamento Parcial.pdf</span><span class="size">518455</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
+<li><a href="/csppdserra/orientacoes/Afastamento%20Total_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Afastamento%20Total.pdf" class="icon icon icon-pdf icon-application-pdf" title="Afastamento Total_Orientações Processuais_ 2020_Afastamento Total.pdf"><span class="name">Afastamento Total_Orientações Processuais_ 2020_Afastamento Total.pdf</span><span class="size">918118</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
+<li><a href="/csppdserra/orientacoes/Licen%C3%A7a%20Capacita%C3%A7%C3%A3o_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Licen%C3%A7a%20Capacita%C3%A7%C3%A3o.pdf" class="icon icon icon-pdf icon-application-pdf" title="Licença Capacitação_Orientações Processuais_ 2020_Licença Capacitação.pdf"><span class="name">Licença Capacitação_Orientações Processuais_ 2020_Licença Capacitação.pdf</span><span class="size">398559</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
+<li><a href="/csppdserra/orientacoes/Mudan%C3%A7a%20de%20Regime%20de%20Trabalho_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Mudan%C3%A7a%20de%20Regime%20de%20Trabalho.pdf" class="icon icon icon-pdf icon-application-pdf" title="Mudança de Regime de Trabalho_Orientações Processuais_ 2020_Mudança de Regime de Trabalho.pdf"><span class="name">Mudança de Regime de Trabalho_Orientações Processuais_ 2020_Mudança de Regime de Trabalho.pdf</span><span class="size">653266</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
+<li><a href="/csppdserra/orientacoes/Orienta%C3%A7%C3%B5es%20Processuais_%202020_Completa.pdf" class="icon icon icon-pdf icon-application-pdf" title="Orientações Processuais_ 2020_Completa.pdf"><span class="name">Orientações Processuais_ 2020_Completa.pdf</span><span class="size">6800063</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
+<li><a href="/csppdserra/orientacoes/Probat%C3%B3rio_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Probat%C3%B3rio.pdf" class="icon icon icon-pdf icon-application-pdf" title="Probatório_Orientações Processuais_ 2020_Probatório.pdf"><span class="name">Probatório_Orientações Processuais_ 2020_Probatório.pdf</span><span class="size">318970</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
+<li><a href="/csppdserra/orientacoes/Progress%C3%A3o%20Funcional_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Progress%C3%A3o%20Funicional%20de%20D101%20at%C3%A9%20D404.pdf" class="icon icon icon-pdf icon-application-pdf" title="Progressão Funcional_Orientações Processuais_ 2020_Progressão Funicional de D101 até D404.pdf"><span class="name">Progressão Funcional_Orientações Processuais_ 2020_Progressão Funicional de D101 até D404.pdf</span><span class="size">1668545</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
+<li><a href="/csppdserra/orientacoes/Promo%C3%A7%C3%A3o%20a%20Classe%20Titular_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Promo%C3%A7%C3%A3o%20a%20Classe%20Titular%20D404%20a%20D501.pdf" class="icon icon icon-pdf icon-application-pdf" title="Promoção a Classe Titular_Orientações Processuais_ 2020_Promoção a Classe Titular D404 a D501.pdf"><span class="name">Promoção a Classe Titular_Orientações Processuais_ 2020_Promoção a Classe Titular D404 a D501.pdf</span><span class="size">409898</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
+<li><a href="/csppdserra/orientacoes/RSC_Orienta%C3%A7%C3%B5es%20Processuais_%202020_RSC.pdf" class="icon icon icon-pdf icon-application-pdf" title="RSC_Orientações Processuais_ 2020_RSC.pdf"><span class="name">RSC_Orientações Processuais_ 2020_RSC.pdf</span><span class="size">3368683</span><span class="date">6/8/2020 4:33:11 PM</span></a></li></ul>
+        `);
+        $("#resolucoes").after(`
+        <ul id="files" class="view-tiles"><li><a href="/csppdserra" class="icon icon-directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+<li><a href="/csppdserra/resolucoes/Res_CS_12_2019_-_Altera_Resolu%C3%A7%C3%A3o_CS_21_2018_-_Disp%C3%B5e_sobre_o_processo_de_Avalia%C3%A7%C3%A3o_e_Progress%C3%A3o_Docente.pdf" class="icon icon icon-pdf icon-application-pdf" title="Res_CS_12_2019_-_Altera_Resolução_CS_21_2018_-_Dispõe_sobre_o_processo_de_Avaliação_e_Progressão_Docente.pdf"><span class="name">Res_CS_12_2019_-_Altera_Resolução_CS_21_2018_-_Dispõe_sobre_o_processo_de_Avaliação_e_Progressão_Docente.pdf</span><span class="size">107969</span><span class="date">6/9/2020 8:57:30 AM</span></a></li>
+<li><a href="/csppdserra/resolucoes/Res_CS_12_2019_-_Anexo%20V.pdf" class="icon icon icon-pdf icon-application-pdf" title="Res_CS_12_2019_-_Anexo V.pdf"><span class="name">Res_CS_12_2019_-_Anexo V.pdf</span><span class="size">105643</span><span class="date">6/9/2020 8:57:32 AM</span></a></li>
+<li><a href="/csppdserra/resolucoes/Res_CS_21_2018_-_Anexo_VI_Rev.pdf" class="icon icon icon-pdf icon-application-pdf" title="Res_CS_21_2018_-_Anexo_VI_Rev.pdf"><span class="name">Res_CS_21_2018_-_Anexo_VI_Rev.pdf</span><span class="size">88411</span><span class="date">6/9/2020 8:57:29 AM</span></a></li>
+<li><a href="/csppdserra/resolucoes/Res_CS_21_2018_-_Processo_de_Avalia%C3%A7%C3%A3o_de_Desempenho_dos_docentes_-_texto_compilado_2.pdf" class="icon icon icon-pdf icon-application-pdf" title="Res_CS_21_2018_-_Processo_de_Avaliação_de_Desempenho_dos_docentes_-_texto_compilado_2.pdf"><span class="name">Res_CS_21_2018_-_Processo_de_Avaliação_de_Desempenho_dos_docentes_-_texto_compilado_2.pdf</span><span class="size">143702</span><span class="date">6/9/2020 8:51:16 AM</span></a></li>
+<li><a href="/csppdserra/resolucoes/Res_CS_27_2018_-_Altera_Resolu%C3%A7%C3%A3o_21_2016_-_Estabelece_normas_para_progress%C3%A3o_docente_do_Ifes_entre_suas_unidades.pdf" class="icon icon icon-pdf icon-application-pdf" title="Res_CS_27_2018_-_Altera_Resolução_21_2016_-_Estabelece_normas_para_progressão_docente_do_Ifes_entre_suas_unidades.pdf"><span class="name">Res_CS_27_2018_-_Altera_Resolução_21_2016_-_Estabelece_normas_para_progressão_docente_do_Ifes_entre_suas_unidades.pdf</span><span class="size">108889</span><span class="date">6/9/2020 8:53:01 AM</span></a></li></ul>
+        `);
     </script>
 </body>
 
