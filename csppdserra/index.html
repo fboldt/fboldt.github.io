@@ -14,7 +14,13 @@
             <h2 id="modelos">Modelos</h2>
         </div>
         <div class="m-3">
+            <h2 id="tutoriais">Tutoriais</h2>
+        </div>
+        <div class="m-3">
             <h2 id="orientacoes">Orientações</h2>
+        </div>
+        <div class="m-3">
+            <h2 id="resolucoes">Resoluções</h2>
         </div>
     </div>
     <!-- JavaScript (Opcional) -->
@@ -27,8 +33,22 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script>
-        $.get("modelos/index.html", function (data, status) { $("#modelos").after(data); });
-        $.get("orientacoes/index.html", function (data, status) { $("#orientacoes").after(data); });
+        $.get("modelos/", function (data, status) {
+            let start = data.search("<ul");
+            let end = data.search("</ul>");
+            $("#modelos").after(data.slice(start,end)); });
+        $.get("tutoriais/", function (data, status) { 
+            let start = data.search("<ul");
+            let end = data.search("</ul>");
+            $("#tutoriais").after(data.slice(start,end)); });
+        $.get("orientacoes/", function (data, status) { 
+            let start = data.search("<ul");
+            let end = data.search("</ul>");
+            $("#orientacoes").after(data.slice(start,end)); });
+        $.get("resolucoes/", function (data, status) { 
+            let start = data.search("<ul");
+            let end = data.search("</ul>");
+            $("#resolucoes").after(data.slice(start,end)); });
     </script>
 </body>
 
