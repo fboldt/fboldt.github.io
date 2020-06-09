@@ -5,6 +5,17 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>CSSPD - Serra</title>
+    <style>
+        span.size { display: none; }
+        span.date { 
+            margin-left: 2em; 
+            color: black;
+            }
+        span.date::before {
+            content: "Atualizado em: ";
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,6 +37,7 @@
         <div class="m-3">
             <h2 id="resolucoes">Resoluções</h2>
         </div>
+        <div class="m-3">&nbsp;</div>
     </div>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
@@ -38,24 +50,24 @@
         crossorigin="anonymous"></script>
     <script>
         $("#anexos").after(`
-        <ul id="files" class="view-tiles"><li><a href="/csppdserra" class="icon icon-directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+        <ul id="files" class="view-tiles">
 <li><a href="/csppdserra/anexos/anexo-v-res-CS-12-2019.doc" class="icon icon icon-doc icon-application-msword" title="anexo-v-res-CS-12-2019.doc"><span class="name">anexo-v-res-CS-12-2019.doc</span><span class="size">206336</span><span class="date">6/9/2020 3:43:14 PM</span></a></li>
 <li><a href="/csppdserra/anexos/anexo-vi-res-CS-21-2018.docx" class="icon icon icon-docx" title="anexo-vi-res-CS-21-2018.docx"><span class="name">anexo-vi-res-CS-21-2018.docx</span><span class="size">36914</span><span class="date">6/9/2020 3:43:16 PM</span></a></li>
 <li><a href="/csppdserra/anexos/anexos-I-IV-resolucao-progressao-21-2018-rev-19-08-2019.xlsx" class="icon icon icon-xlsx" title="anexos-I-IV-resolucao-progressao-21-2018-rev-19-08-2019.xlsx"><span class="name">anexos-I-IV-resolucao-progressao-21-2018-rev-19-08-2019.xlsx</span><span class="size">109038</span><span class="date">6/9/2020 3:43:13 PM</span></a></li></ul>
         `);
         $("#modelos").after(`
-        <ul id="files" class="view-tiles"><li><a href="/csppdserra" class="icon icon-directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+        <ul id="files" class="view-tiles">
 <li><a href="/csppdserra/modelos/Modelo%20Parecer%20de%20Progress%C3%A3o%20CSPPD%2001-06.docx" class="icon icon icon-docx" title="Modelo Parecer de Progressão CSPPD 01-06.docx"><span class="name">Modelo Parecer de Progressão CSPPD 01-06.docx</span><span class="size">70471</span><span class="date">6/8/2020 4:32:53 PM</span></a></li>
 <li><a href="/csppdserra/modelos/Parecer%20Modelo%20AFASTAMENTO_30.03.2020.docx" class="icon icon icon-docx" title="Parecer Modelo AFASTAMENTO_30.03.2020.docx"><span class="name">Parecer Modelo AFASTAMENTO_30.03.2020.docx</span><span class="size">77163</span><span class="date">6/8/2020 4:32:53 PM</span></a></li>
 <li><a href="/csppdserra/modelos/Parecer%20Modelo%20MUDAN%C3%87A%20DE%20REGIME_30.03.2020.docx" class="icon icon icon-docx" title="Parecer Modelo MUDANÇA DE REGIME_30.03.2020.docx"><span class="name">Parecer Modelo MUDANÇA DE REGIME_30.03.2020.docx</span><span class="size">72557</span><span class="date">6/8/2020 4:32:53 PM</span></a></li>
 <li><a href="/csppdserra/modelos/Parecer%20Modelo%20RSC_30.03.2020.docx" class="icon icon icon-docx" title="Parecer Modelo RSC_30.03.2020.docx"><span class="name">Parecer Modelo RSC_30.03.2020.docx</span><span class="size">75722</span><span class="date">6/8/2020 4:32:53 PM</span></a></li></ul>
         `);
         $("#tutoriais").after(`
-        <ul id="files" class="view-tiles"><li><a href="/csppdserra" class="icon icon-directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+        <ul id="files" class="view-tiles">
 <li><a href="/csppdserra/tutoriais/Tutorial_para_a_Abertura_de_Processo_Eletronico_no_SIPAC.pdf" class="icon icon icon-pdf icon-application-pdf" title="Tutorial_para_a_Abertura_de_Processo_Eletronico_no_SIPAC.pdf"><span class="name">Tutorial_para_a_Abertura_de_Processo_Eletronico_no_SIPAC.pdf</span><span class="size">1884426</span><span class="date">6/9/2020 2:51:12 PM</span></a></li></ul>
         `);
         $("#orientacoes").after(`
-        <ul id="files" class="view-tiles"><li><a href="/csppdserra" class="icon icon-directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+        <ul id="files" class="view-tiles">
 <li><a href="/csppdserra/orientacoes/Acelera%C3%A7%C3%A3o%20de%20Promo%C3%A7%C3%A3o_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Acelera%C3%A7%C3%A3o%20de%20Promo%C3%A7%C3%A3o.pdf" class="icon icon icon-pdf icon-application-pdf" title="Aceleração de Promoção_Orientações Processuais_ 2020_Aceleração de Promoção.pdf"><span class="name">Aceleração de Promoção_Orientações Processuais_ 2020_Aceleração de Promoção.pdf</span><span class="size">528269</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
 <li><a href="/csppdserra/orientacoes/Afastamento%20Parcial_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Afastamento%20Parcial.pdf" class="icon icon icon-pdf icon-application-pdf" title="Afastamento Parcial_Orientações Processuais_ 2020_Afastamento Parcial.pdf"><span class="name">Afastamento Parcial_Orientações Processuais_ 2020_Afastamento Parcial.pdf</span><span class="size">518455</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
 <li><a href="/csppdserra/orientacoes/Afastamento%20Total_Orienta%C3%A7%C3%B5es%20Processuais_%202020_Afastamento%20Total.pdf" class="icon icon icon-pdf icon-application-pdf" title="Afastamento Total_Orientações Processuais_ 2020_Afastamento Total.pdf"><span class="name">Afastamento Total_Orientações Processuais_ 2020_Afastamento Total.pdf</span><span class="size">918118</span><span class="date">6/8/2020 4:33:11 PM</span></a></li>
@@ -68,7 +80,7 @@
 <li><a href="/csppdserra/orientacoes/RSC_Orienta%C3%A7%C3%B5es%20Processuais_%202020_RSC.pdf" class="icon icon icon-pdf icon-application-pdf" title="RSC_Orientações Processuais_ 2020_RSC.pdf"><span class="name">RSC_Orientações Processuais_ 2020_RSC.pdf</span><span class="size">3368683</span><span class="date">6/8/2020 4:33:11 PM</span></a></li></ul>
         `);
         $("#resolucoes").after(`
-        <ul id="files" class="view-tiles"><li><a href="/csppdserra" class="icon icon-directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+        <ul id="files" class="view-tiles">
 <li><a href="/csppdserra/resolucoes/Res_CS_12_2019_-_Altera_Resolu%C3%A7%C3%A3o_CS_21_2018_-_Disp%C3%B5e_sobre_o_processo_de_Avalia%C3%A7%C3%A3o_e_Progress%C3%A3o_Docente.pdf" class="icon icon icon-pdf icon-application-pdf" title="Res_CS_12_2019_-_Altera_Resolução_CS_21_2018_-_Dispõe_sobre_o_processo_de_Avaliação_e_Progressão_Docente.pdf"><span class="name">Res_CS_12_2019_-_Altera_Resolução_CS_21_2018_-_Dispõe_sobre_o_processo_de_Avaliação_e_Progressão_Docente.pdf</span><span class="size">107969</span><span class="date">6/9/2020 8:57:30 AM</span></a></li>
 <li><a href="/csppdserra/resolucoes/Res_CS_12_2019_-_Anexo%20V.pdf" class="icon icon icon-pdf icon-application-pdf" title="Res_CS_12_2019_-_Anexo V.pdf"><span class="name">Res_CS_12_2019_-_Anexo V.pdf</span><span class="size">105643</span><span class="date">6/9/2020 8:57:32 AM</span></a></li>
 <li><a href="/csppdserra/resolucoes/Res_CS_21_2018_-_Anexo_VI_Rev.pdf" class="icon icon icon-pdf icon-application-pdf" title="Res_CS_21_2018_-_Anexo_VI_Rev.pdf"><span class="name">Res_CS_21_2018_-_Anexo_VI_Rev.pdf</span><span class="size">88411</span><span class="date">6/9/2020 8:57:29 AM</span></a></li>
