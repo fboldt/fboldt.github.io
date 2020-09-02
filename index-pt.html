@@ -57,11 +57,19 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#research">Pesquisa</a>
                             </li>
-                            <li class="nav-item">
+                            <!--li class="nav-item">
                                 <a class="nav-link" href="#presentations">Apresentações</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="csppdserra">CSPPD</a>
+                            </li-->
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+									Extras
+								</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item p-2" href="csppdserra">CSPPD</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item p-2" href="#presentations">Apresentações</a>
+                                    <a class="dropdown-item p-2" href="#books">Leitura</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -100,6 +108,9 @@
             $("footer").before(data);
         });
         $.get("presentations-pt.html", function(data, status) {
+            $("footer").before(data);
+        });
+        $.get("books-pt.html", function(data, status) {
             $("footer").before(data);
         });
     </script>
