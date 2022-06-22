@@ -1,102 +1,137 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Boldtstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<title>Professor Francisco Boldt</title>
+	<link rel="icon" href="images/fbicon.svg" type="image/png">
 	<style>
-	.fundo { background-color: yellow; border: 2px solid;}
-	
+		.fundo {
+			background-color: yellow;
+			border: 2px solid;
+		}
 	</style>
-  </head>
-  <body>
+</head>
+
+<body>
 	<header class="container my-4">
 		<div class="row">
 			<div class="col">
-				<img src="img/serra-horizontal-preto.png" class="img-fluid" alt="Ifes - Campus Serra">
+				<img src="images/serra-horizontal-preto.png" class="img-fluid" alt="Ifes - Campus Serra">
 			</div>
-			<div class="col d-flex justify-content-end">aqui vai o menu</div>
+			<div class="col d-flex justify-content-end"></div>
 		</div>
 		<div class="row">
 			<div class="col text-center">
-				<img src="img/foto.png" class="img-fluid" alt="Francisco Boldt">
+				<img src="images/foto.png" class="img-fluid" alt="Francisco Boldt">
 			</div>
-			<div class="col-md-6 my-5 text-center">
-			<div class="text-start" style="display: inline-block;">
-				<h2>Francisco de Assis Boldt</h2>
-				<h5>Doutor em Ciência da Computação</h5>
-				<p>Professor do Instituto Federal do Espírito Santo
-					<br>Pesquisador da área de Inteligência Artificial.
-					<br>Entusiasta em desenvolvimento de software.</p>		
-			</div>
-			<div class="row">
-				<a class="col" href="http://lattes.cnpq.br/0385991152092556"><img src="img/lattes.png"></a>
-				<a class="col" href="https://scholar.google.com.br/citations?user=cVUbNyMAAAAJ" class="mx-2"><img src="img/scholar.png"></a>
-				<a class="col" href="https://github.com/fboldt"><img src="img/github.png"></a>
-			</div>
+			<div class="col-sm-6 text-center">
+				<div class="text-start" style="display: inline-block;">
+					<h2>Francisco de Assis Boldt</h2>
+					<h5>Doutor em Ciência da Computação</h5>
+					<h5 style="font-weight: normal;">Instituto Federal do Espírito Santo</h5>
+					<p>Pesquisador da área de Inteligência Artificial.
+						<br>Entusiasta em desenvolvimento de software.
+					</p>
+				</div>
+				<div class="row">
+					<a class="col my-2" href="http://lattes.cnpq.br/0385991152092556"><img src="images/lattes.png"></a>
+					<a class="col my-2" href="https://github.com/fboldt"><img src="images/github.png"></a>
+					<a class="col my-2" href="https://scholar.google.com.br/citations?user=cVUbNyMAAAAJ"
+						class="mx-2"><img src="images/scholar.png"></a>
+
+					<a class="col my-2" href="https://www.youtube.com/channel/UClcegOkJsWbla_9X7odCL9g"><img
+							src="images/youtube.png"></a>
+				</div>
 			</div>
 		</div>
 	</header>
-	
-	
+
+
 	<section class="container my-4">
 		<h2>Formação</h2>
 		<div class="row">
-			<div class="col-md-3 col-sm-6"><b>Doutorado</b> em Ciência da Computação - <a href="http://www.informatica.ufes.br/">Ufes</a> - Concluído em 2017 - Inteligência Artificial - 
-				<a href="http://repositorio.ufes.br/jspui/handle/10/9872">Tese</a></div>
-			<div class="col-md-3 col-sm-6"><b>Mestrado</b> em Informática - <a href="http://www.informatica.ufes.br/">Ufes</a> - Concluído em 2008 - Otimização / Redes Ópticas - 
-				<a href="http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=148019">Dissertação</a></div>
-			<div class="col-md-3 col-sm-6"><b>Especialização</b> em Desenvolvimento de Sistemas em Java - <a href="http://www.informatica.ufes.br/">Ufes</a> - Concluído em 2006</div>
-			<div class="col-md-3 col-sm-6"><b>Curso Superior</b> de Tecnologia em Processamento de Dados - <a href="https://www.unesc.br/">Unesc</a> - Concluído em 1998</div>
-		</div>
-	</section>
-	
-	
-	<section class="container my-4">
-		<div class="row"><div class="col"><h2>Disciplinas</h2></div></div>
-		<div class="row"><div class="col">
-		<div class="card-group">
-		<div class="row">
-		<div class="col-lg-4 col-md-6">
-		  <div class="card">
-			<img src="img/patternrecognition.png" class="card-img-top" alt="...">
-			<div class="card-body">
-			  <h5 class="card-title">Reconhecimento de Padrões</h5>
-			  <p class="card-text">Proporcionar o entendimento das principais técnicas de reconhecimento de padrões, assim como suas utilizações em problemas técnico-científicos atuais.</p>
-            <a href="https://docs.google.com/document/d/1xQ3zdfY15j3fCA3FjYFvoT4OmpFVSI7WFLYgbVoW-q4/"  class="card-link">Plano de Ensino</a>
-            <a href="https://github.com/fboldt/aulasml"  class="card-link">Código</a> 
-            <a href="https://www.youtube.com/playlist?list=PLDb15-rsiE-NNLSvQhpJjUdR0sbvubmUA"  class="card-link">V&iacute;deos</a>
+			<div class="col-md-3 col-sm-6"><b>Doutorado</b> em Ciência da Computação - <a
+					href="http://www.informatica.ufes.br/">Ufes</a> - Concluído em 2017 - Inteligência Artificial -
+				<a href="http://repositorio.ufes.br/jspui/handle/10/9872">Tese</a>
 			</div>
-		  </div>
-		  </div>
-		  <div class="col-lg-4 col-md-6">
-		  <div class="card">
-			<img src="img/neuralnetworks.png" class="card-img-top" alt="...">
-			<div class="card-body">
-			  <h5 class="card-title">Card title</h5>
-			  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-			  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			<div class="col-md-3 col-sm-6"><b>Mestrado</b> em Informática - <a
+					href="http://www.informatica.ufes.br/">Ufes</a> - Concluído em 2008 - Otimização / Redes Ópticas -
+				<a
+					href="http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=148019">Dissertação</a>
 			</div>
-		  </div>
-		  </div>
-		  <div class="col-lg-4 col-md-6">
-		  <div class="card">
-			<img src="img/htmlcssjs.png" class="card-img-top" alt="...">
-			<div class="card-body">
-			  <h5 class="card-title">Card title</h5>
-			  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-			  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			</div>
-		  </div>
-		  </div>
-		</div>
-		</div></div>
+			<div class="col-md-3 col-sm-6"><b>Especialização</b> em Desenvolvimento de Sistemas em Java - <a
+					href="http://www.informatica.ufes.br/">Ufes</a> - Concluído em 2006</div>
+			<div class="col-md-3 col-sm-6"><b>Curso Superior</b> de Tecnologia em Processamento de Dados - <a
+					href="https://www.unesc.br/">Unesc</a> - Concluído em 1998</div>
 		</div>
 	</section>
 
-	<footer class="container">franciscoa @ ifes.edu.br</div>
-	
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+
+	<section class="container my-4">
+		<div class="row">
+			<div class="col">
+				<h2>Disciplinas</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 my-2">
+				<div class="card">
+					<img src="images/patternrecognition.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Reconhecimento de Padrões</h5>
+						<h6 class="card-subtitle text-muted">Nível: Mestrado</h6>
+						<a href="https://docs.google.com/document/d/1xQ3zdfY15j3fCA3FjYFvoT4OmpFVSI7WFLYgbVoW-q4/"
+							class="card-link">Plano de Ensino</a>
+						<a href="https://github.com/fboldt/aulasml" class="card-link">Código</a>
+						<a href="https://www.youtube.com/playlist?list=PLDb15-rsiE-NNLSvQhpJjUdR0sbvubmUA"
+							class="card-link">V&iacute;deos</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2">
+				<div class="card">
+					<img src="images/neuralnetworks.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Redes Neurais Artificiais</h5>
+						<h6 class="card-subtitle text-muted">Nível: Mestrado</h6>
+						<a href="https://docs.google.com/document/d/1qyG72enSx8Isd_938D3G4tP-xf7vpPo9xVCkRu5JDoA/">Plano
+							de Ensino</a> -
+						<a href="https://github.com/fboldt/aulasann">Código</a> -
+						<a
+							href="https://www.youtube.com/playlist?list=PLDb15-rsiE-P1vUe9tVW0p7btGvTviR50">V&iacute;deos</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2">
+				<div class="card">
+					<img src="images/htmlcssjs.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Programação Web</h5>
+						<h6 class="card-subtitle text-muted">Nível: Técnico</h6>
+						<a href="aux/PLANO-DE-ENSINO_tec-prog-web-1.pdf">Plano de Ensino</a> -
+						<a
+							href="https://drive.google.com/drive/folders/1ULLyg_zEjV2f8zUUBfhKMg4Oj0lrHmZ3">Apresenta&ccedil;&otilde;es</a>
+						-
+						<a href="https://github.com/fboldt/aulasweb">Códigos</a> -
+						<a
+							href="https://www.youtube.com/playlist?list=PLDb15-rsiE-NvOdyZ3kZk9JVxRVehZVVR">V&iacute;deos</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container">
+		<p>Contato: <img src="images/email.png"></p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
