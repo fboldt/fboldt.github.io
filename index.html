@@ -1,51 +1,68 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<title>Professor Francisco Boldt</title>
-	<link rel="icon" href="images/fbicon.svg" type="image/png">
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        img {
+            width: auto;
+            height: auto;
+        }
+        p { text-align: justify;}
+        .dropdown-menu {
+            min-width: 0px !important;
+        }
+        h2, h3 {
+            margin-top: 1em;
+        }
+    </style>
+    <title>Professor Francisco Boldt</title>
+    <link rel="icon" href="images/fbicon.svg" type="image/png">
 </head>
 
 <body>
-	<header class="container my-4">
-		<div class="row">
-			<div class="col">
-				<img src="images/serra-horizontal-preto.png" class="img-fluid" alt="Ifes - Campus Serra">
-			</div>
-			<div class="col d-flex justify-content-end">
+    
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a class="navbar-brand align-self-start" href="http://www.serra.ifes.edu.br"><img src="images/serra-horizontal-preto.png" alt=""></a>
+                <div>
+                    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">Formação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#disciplines">Disciplinas</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+									Links
+								</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="labfbro.html">LabFBRO</a>
+									<a class="dropdown-item" href="csppdserra/index.html">CSPPD</a>
+									<hr class="dropdown-divider">
+									<a class="dropdown-item" href="https://fboldt.github.io/hellogit/hellogit.html">Tutorial Git</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-				<nav class="navbar navbar-expand-lg">
-					<div class="container-fluid">
-					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						  <li class="nav-item">
-							<a class="nav-link" href="#education">Formação</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#disciplines">Disciplinas</a>
-						  </li>
-						  <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							  Links
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="labfbro.html">LabFBRO</a></li>
-							  <li><a class="dropdown-item" href="csppdserra/index.html">CSPPD</a></li>
-							  <li><hr class="dropdown-divider"></li>
-							  <li><a class="dropdown-item" href="https://fboldt.github.io/hellogit/hellogit.html">Tutorial Git</a></li>
-							</ul>
-						  </li>
-						</ul>
-					  </div>
-					</div>
-				  </nav>
-
-			</div>
-		</div>
+	<section class="container my-4" id="banner">
 		<div class="row">
 			<div class="col text-center">
 				<img src="images/foto.png" class="img-fluid" alt="Francisco Boldt">
@@ -59,19 +76,15 @@
 						<br>Entusiasta em desenvolvimento de software.
 					</p>
 				</div>
-				<div class="row">
-					<a class="col my-2" href="http://lattes.cnpq.br/0385991152092556"><img src="images/lattes.png"></a>
-					<a class="col my-2" href="https://github.com/fboldt"><img src="images/github.png"></a>
-					<a class="col my-2" href="https://scholar.google.com.br/citations?user=cVUbNyMAAAAJ"
-						class="mx-2"><img src="images/scholar.png"></a>
-
-					<a class="col my-2" href="https://www.youtube.com/channel/UClcegOkJsWbla_9X7odCL9g"><img
-							src="images/youtube.png"></a>
+				<div>
+					<a class="col m-2" href="http://lattes.cnpq.br/0385991152092556"><img src="images/lattes.png"></a>
+					<a class="col m-2" href="https://scholar.google.com.br/citations?user=cVUbNyMAAAAJ" class="mx-2"><img src="images/scholar.png"></a>
+					<a class="col m-2" href="https://github.com/fboldt"><img src="images/github.png"></a>
+					<a class="col m-2" href="https://www.youtube.com/channel/UClcegOkJsWbla_9X7odCL9g"><img src="images/youtube.png"></a>
 				</div>
 			</div>
 		</div>
-	</header>
-
+	</section>
 
 	<section class="container my-4" id="education">
 		<h2>Formação</h2>
@@ -91,7 +104,6 @@
 					href="https://www.unesc.br/">Unesc</a> - Concluído em 1998</div>
 		</div>
 	</section>
-
 
 	<section class="container my-4" id="disciplines">
 		<div class="row">
@@ -130,12 +142,23 @@
 			</div>
 			<div class="col-lg-4 col-md-6 my-2">
 				<div class="card">
-					<img src="images/htmlcss.png" class="card-img-top" alt="HTML & CSS">
+					<div id="progweb1e2" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="images/htmlcss.png" alt="HTML & CSS">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="images/javascript.png" alt="JavaScript">
+							</div>
+						</div>
+					</div>
 					<div class="card-body">
 						<h5 class="card-title">Programação Web 1 e 2</h5>
 						<h6 class="card-subtitle text-muted">Nível: Técnico</h6>
-						<a href="https://docs.google.com/document/d/1Svc9yCESxJAioadoggbT1G9H0dsr1Rf19jX8LudE1oY">Plano de Ensino (pw1)</a> -
-						<a href="https://docs.google.com/document/d/1cyICxyNfejY1Wdbj4TpCQL3-a-YseHHe6Fo4dM_jQvI">Plano de Ensino (pw2)</a> -
+						<a href="https://docs.google.com/document/d/1Svc9yCESxJAioadoggbT1G9H0dsr1Rf19jX8LudE1oY">Plano
+							de Ensino (pw1)</a> -
+						<a href="https://docs.google.com/document/d/1cyICxyNfejY1Wdbj4TpCQL3-a-YseHHe6Fo4dM_jQvI">Plano
+							de Ensino (pw2)</a> -
 						<a
 							href="https://drive.google.com/drive/folders/1ULLyg_zEjV2f8zUUBfhKMg4Oj0lrHmZ3">Apresenta&ccedil;&otilde;es</a>
 						-
@@ -151,10 +174,10 @@
 	<footer class="container">
 		<p id="email">Contato: <img src="images/email.png"></p>
 	</footer>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-		crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
