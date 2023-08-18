@@ -1,1 +1,0 @@
-[clipboard](https://docs.google.com/document/d/1GkK24sinUI_LXT3n4kldHNT3KuD3fvIPYdKYCLHTrA0/edit?usp=sharing)
