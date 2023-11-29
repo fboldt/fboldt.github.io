@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Acesso aos Computadores da Sala 902T</title>
     <style>
@@ -103,10 +101,26 @@
                                         <th width="60%"> Configuração </th>
                                     </tr>
                                     <tr>
+                                        <td> hctc1 </td>
+                                        <td class="online"> online </td>
+                                        <td> 172.18.0.1 </td> 
+                                        <td class="text"> Intel(R) Core(TM) i9-10900KF CPU 3.70GHz, 32GB de RAM, HD
+                                            de 3TB, SSD de 240GB,
+                                            placa de vídeo NVIDIA Geforce RTX 3060 com 12GB de memória. 
+                                    </td>
+                                    <tr>
+                                        <td> hctc2 </td>
+                                        <td class="online"> online </td>
+                                        <td> 172.19.113.102 </td> 
+                                        <td class="text"> Intel(R) Core(TM) i9-10900KF CPU 3.70GHz, 32GB de RAM, HD
+                                            de 2TB, SSD de 250GB,
+                                            placa de vídeo NVIDIA Geforce RTX 3060 com 12GB de memória. 
+                                    </td>
+                                    <tr>
                                         <td> fbro0 </td>
                                         <td class="busy"> ocupada </td>
                                         <td> 172.19.113.100 </td> <!-- b4:2e:99:ad:57:e9 -->
-                                        <td class="text"> NVIDIA Geforce RTX 2080 8GB </td>
+                                        <td class="text"> placa de vídeo NVIDIA Geforce RTX 2080 8GB </td>
                                     </tr>
                                     <tr>
                                         <td> fbro1 </td>
@@ -134,10 +148,8 @@
                                     </tr>
                                     <tr>
                                         <td> fbro4 </td>
-                                        <td class="busy"> rede<br>interna </td>
-                                        <td> 172.19.140.70 <br>
-                                            (Só funciona <br>
-                                            dentro do Ifes)
+                                        <td class="online"> online </td>
+                                        <td> 172.19.113.4 </td>
                                         </td>
                                         <td class="text"> Intel(R) Core(TM) i9-9900KF CPU 3.60GHz, 32GB de RAM, HD
                                             de 1TB, SSD de 260GB,
@@ -187,7 +199,7 @@
                                     </tr>
                                     <tr>
                                         <td> fbro10 </td>
-                                        <td class="busy"> ocupada </td>
+                                        <td class="online"> online </td>
                                         <td> 172.19.113.10 </td> <!-- b4:2e:99:68:45:69 -->
                                         <td class="text"> Intel(R) Core(TM) i9-9900KF CPU 3.60GHz, 32GB de RAM, HD
                                             de 1TB, SSD de 260GB,
@@ -197,7 +209,7 @@
                                     <tr>
                                         <td> fbro11 </td>
                                         <td class="online"> online </td>
-                                        <td> 172.19.113.51 </td>
+                                        <td> 172.19.113.11 </td>
                                         <td class="text"> Intel(R) Core(TM) i9-9900KF CPU 3.60GHz, 32GB de RAM, HD
                                             de 1TB, SSD de 260GB,
                                             placa
@@ -206,7 +218,7 @@
                                     <tr>
                                         <td> fbro12 </td>
                                         <td class="online"> online </td>
-                                        <td> 172.19.113.50 </td>
+                                        <td> 172.19.113.12 </td>
                                         <td class="text"> Intel(R) Core(TM) i9-9900KF CPU 3.60GHz, 32GB de RAM, HD
                                             de 1TB, SSD de 260GB,
                                             placa
@@ -214,7 +226,7 @@
                                     </tr>
                                     <tr>
                                         <td> fbro13 </td>
-                                        <td class="busy"> ocupada </td>
+                                        <td class="online"> online </td>
                                         <td> 172.19.113.13 </td> <!-- b4:2e:99:68:45:66 -->
                                         <td class="text"> Intel(R) Core(TM) i9-9900KF CPU 3.60GHz, 32GB de RAM, HD
                                             de 1TB, SSD de 260GB,
@@ -267,10 +279,10 @@
                             <b> Configuração para Windows </b> <br>
                             0) Fazer o download do instalador do OpenVPN pré-configurado. <br>
                             <ul>
-                                <li><a href="labfbro_files/openvpn-Cachalote-UDP4-1196-install-2.5.2-I601-amd64.exe">Instalador
+                                <li><a href="https://fboldt.github.io/labfbro_files/openvpn-Cachalote-UDP4-1196-install-2.5.2-I601-amd64.exe">Instalador
                                         -
                                         64 bits (recomendada)</a></li>
-                                <li><a href="labfbro_files/openvpn-Cachalote-UDP4-1196-install-2.5.2-I601-x86.exe">Instalador
+                                <li><a href="https://fboldt.github.io/labfbro_files/openvpn-Cachalote-UDP4-1196-install-2.5.2-I601-x86.exe">Instalador
                                         -
                                         32 bits</a></li>
                             </ul>
@@ -279,7 +291,7 @@
                             Cachalote e clicar em
                             conectar. <br>
                             3) Digitar as credenciais. <br>
-                            <img src="./labfbro_files/conexao-openvpn.png"> <br>
+                            <img src="labfbro_files/conexao-openvpn.png"> <br>
                         </div>
                     </div>
 
@@ -291,7 +303,7 @@
                             <b> Configuração para Linux </b> <br>
                             0) Fazer download e descompactar pacote contendo 3 arquivos de configuração: <br>
                             <ul>
-                                <li><a href="labfbro_files/OpenVPN%20Lab%20902T.7z">Pacote com arquivos de
+                                <li><a href="https://fboldt.github.io/labfbro_files/OpenVPN%20Lab%20902T.7z">Pacote com arquivos de
                                         configuração</a>. </li>
                             </ul>
                             1) Vá em configuração de rede. <br>
@@ -312,8 +324,7 @@
                             <h2> Configuração do Ambiente de Desenvolvimento </h2>
                             0) Projetos diferentes podem demandar diferentes versões de bibliotecas. Para evitar que um
                             usuário instale
-                            versões que quebrem as versões dos outros, os usuários devem utilizar <a
-                                href="https://docs.python.org/3/tutorial/venv.html">ambientes virtuais python</a> (ou
+                            versões que quebrem as versões dos outros, os usuários devem utilizar <a href="https://docs.python.org/3/tutorial/venv.html">ambientes virtuais python</a> (ou
                             contêiners docker se
                             forem usadas outras linguagens). Para criar um ambiente virtual python, use o comando abaixo
                             a partir da home do
@@ -342,13 +353,13 @@
 
                         </div>
                     </div>
-            </article>
+            </div></article>
 
         </div>
     </main>
     <div>
         <p>&nbsp;</p>
     </div>
-</body>
 
-</html>
+
+</body></html>
